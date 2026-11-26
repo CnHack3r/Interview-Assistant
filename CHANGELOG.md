@@ -2,9 +2,10 @@
 
 ## 许可变更 - 2026-11-27
 
-- 许可证由 **MIT** 变更为 **[PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)**：源码公开，仅限非商业用途；商业使用需获得作者书面授权
-- `LICENSE` 中写入版权声明与项目地址：`Required Notice: Copyright (c) 2026 CnHack3r (https://github.com/CnHack3r/Interview-Assistant)`
-- `package.json` / `src-tauri/Cargo.toml` 的 license 字段同步更新
+- 许可证由 **MIT** 调整为 **MIT + Commons Clause License Condition v1.0**：源码公开；允许个人与公司/组织内部使用（含内部商业用途），禁止将软件本身或几乎无附加价值地转售、收费分发或按原样提供 SaaS
+- `LICENSE` 中写入版权声明与项目地址：`Copyright (c) 2026 CnHack3r (https://github.com/CnHack3r/Interview-Assistant)`
+- 同步更新 `package.json` / `src-tauri/Cargo.toml` 的 license 字段
+- 重新构建并覆盖发布 v1.1.0 安装包（macOS arm64 / Windows x64），源码与 Release 资产均适用新许可
 
 ## [1.1.0] - 2026-11-26
 

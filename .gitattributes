@@ -1,0 +1,16 @@
+# 统一换行符，保证 Windows x64 上脚本/源码可正常构建
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# 二进制资源不做换行符转换
+*.png binary
+*.ico binary
+*.icns binary
+*.ttf binary
+*.otf binary
+*.pdf binary
+*.dmg binary
+*.zip binary
+*.exe binary

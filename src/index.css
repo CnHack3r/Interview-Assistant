@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Word 预览内容排版 */
+.word-preview h1,
+.word-preview h2,
+.word-preview h3 {
+  font-weight: 600;
+  margin: 0.8em 0 0.4em;
+}
+.word-preview p {
+  margin: 0.4em 0;
+  line-height: 1.8;
+}
+.word-preview table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.6em 0;
+}
+.word-preview td,
+.word-preview th {
+  border: 1px solid #d0d7de;
+  padding: 4px 8px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd2d9;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* 出题进度条：绿色 + 炫光扫过动画 */
+@keyframes gen-glow {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+.gen-progress-glow {
+  position: relative;
+  overflow: hidden;
+}
+.gen-progress-glow::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    100deg,
+    transparent,
+    rgba(255, 255, 255, 0.75),
+    transparent
+  );
+  animation: gen-glow 1.4s linear infinite;
+}

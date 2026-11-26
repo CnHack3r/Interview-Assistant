@@ -1,0 +1,26 @@
+# Rust / Tauri 构建产物
+src-tauri/target/
+src-tauri/gen/
+
+# Node 依赖与前端构建产物
+node_modules/
+dist/
+
+# 本地安装包产物
+release/
+
+# 可选：仓库内的本地 Rust 工具链 / npm 缓存（见 env.sh）
+.cargo/
+.rustup/
+.npm-cache/
+
+# 系统与压缩残留
+.DS_Store
+._*
+__MACOSX/
+Thumbs.db
+*.local
+*.log
+
+# 本地环境变量
+.env

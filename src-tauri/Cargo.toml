@@ -1,0 +1,55 @@
+[package]
+name = "interview-assistant"
+version = "1.0.0"
+description = "面试官助手PRO — 简历解析 / AI 出题 / 面试评分 / PDF 报告（Rust / Tauri 重写）"
+authors = ["interview-assistant"]
+license = "MIT"
+edition = "2021"
+
+[lib]
+name = "interview_assistant_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+base64 = "0.22"
+uuid = { version = "1", features = ["v4"] }
+chrono = "0.4"
+
+# AI / HTTP
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "stream"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time"] }
+
+# 简历解析
+pdf-extract = "0.7"
+zip = { version = "2", default-features = false, features = ["deflate"] }
+quick-xml = "0.36"
+
+# 报告 PDF 生成（printpdf 作为兜底；优先用 headless Chrome 渲染 HTML，复刻原项目 Chromium printToPDF）
+printpdf = "0.7"
+headless_chrome = "1"
+
+# 文件对话框（Rust 内部，跨平台）
+rfd = "0.14"
+
+# Tauri 官方对话插件（保存对话框由前端唤起，规避 macOS 主线程/窗口问题）
+tauri-plugin-dialog = "2"
+
+# 平台数据目录（config / session 落盘）
+dirs = "5"
+
+[features]
+# 由 tauri-build 注入；默认在桌面使用
+custom-protocol = ["tauri/custom-protocol"]
+default = ["custom-protocol"]
+
+[profile.release]
+codegen-units = 1
+opt-level = "z"
+lto = true
+strip = true

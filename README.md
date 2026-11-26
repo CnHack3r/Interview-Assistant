@@ -6,6 +6,22 @@
 
 > 版本：**1.1.0** ｜ 协议：**MIT** ｜ 平台：**macOS (Apple Silicon) / Windows 10+ x64**
 
+## 效果预览
+
+> 以下截图使用虚构示例简历，仅作功能演示。
+
+| 批量导入候选人 | AI 自动出题（含进度日志） |
+| :---: | :---: |
+| [![批量导入候选人](docs/screenshots/01-batch-upload.png)](docs/screenshots/01-batch-upload.png) | [![AI 自动出题](docs/screenshots/02-ai-generating.png)](docs/screenshots/02-ai-generating.png) |
+
+| 面试评分工作台（要点勾选自动折算） | 面试中随时浏览候选人简历 |
+| :---: | :---: |
+| [![面试评分工作台](docs/screenshots/03-scoring.png)](docs/screenshots/03-scoring.png) | [![面试中浏览简历](docs/screenshots/04-resume-preview.png)](docs/screenshots/04-resume-preview.png) |
+
+| PDF 面试评估报告 · 毛笔字总分印章水印 |
+| :---: |
+| [![PDF 面试评估报告](docs/screenshots/05-report.png)](docs/screenshots/05-report.png) |
+
 ## 功能特性
 
 - **多候选人工作台（面试日模式）**：批量上传（多选/拖拽）、统一确认姓名与岗位、AI 串行排队出题、卡片状态与评分进度、失败重试、重启恢复队列
@@ -48,6 +64,7 @@
 │   ├── Cargo.toml
 │   └── tauri.conf.json
 ├── .github/workflows/build.yml # macOS arm64 + Windows x64 安装包 CI
+├── docs/screenshots/           # README 效果预览截图
 ├── index.html
 ├── package.json
 ├── vite.config.ts

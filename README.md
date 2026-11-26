@@ -4,7 +4,7 @@
 
 项目由原 Electron + React 版本重写而来：前端复用原版界面，后端（简历解析、AI 代理、配置与会话持久化、PDF 报告、文件对话框）全部改为 Rust 实现。
 
-> 版本：**1.1.0** ｜ 协议：**MIT** ｜ 平台：**macOS (Apple Silicon) / Windows 10+ x64**
+> 版本：**1.1.0** ｜ 许可：**PolyForm Noncommercial 1.0.0（源码公开 · 禁止商用）** ｜ 平台：**macOS (Apple Silicon) / Windows 10+ x64**
 
 ## 效果预览
 
@@ -180,6 +180,24 @@ npm run build:win
 
 见 [CHANGELOG.md](CHANGELOG.md)。
 
-## 开源协议
+## 许可协议（非商业）
 
-[MIT](LICENSE)
+本项目**源码公开**，但**并非 OSI 定义的开源软件**，采用 **[PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)**：
+
+| | 说明 |
+| --- | --- |
+| ✅ 允许 | 个人学习、研究、实验、教学、业余项目等**非商业用途**；可复制、修改、分发（需保留版权声明与协议文本） |
+| ❌ 禁止 | 任何**商业用途**：销售软件或基于它的产品/服务、SaaS、公司内部商业使用、集成进商业产品等 |
+| 📩 商业授权 | 如需商业使用，请先通过 GitHub 联系作者获得书面授权：<https://github.com/CnHack3r> |
+
+- 版权声明：`Copyright (c) 2026 CnHack3r`
+- 项目地址：<https://github.com/CnHack3r/Interview-Assistant>
+- 完整协议文本见 [LICENSE](LICENSE)
+
+> 历史说明：v1.1.0 及更早版本按 MIT 协议发布，已经按 MIT 获得授权的副本不受本次变更影响；从本次提交之后的新版本适用上述非商业许可。
+
+## 免责声明
+
+- 本软件按「现状」提供，不附带任何明示或默示担保（包括但不限于适销性、特定用途适用性和不侵权）。
+- 在法律允许的最大范围内，作者不对因使用或无法使用本软件产生的任何直接、间接、附带、特殊或后果性损失承担责任。
+- AI 生成的面试题、参考答案与评估报告仅供参考，不构成任何专业意见；候选人简历包含个人信息，请使用者自行确保合法合规处理。

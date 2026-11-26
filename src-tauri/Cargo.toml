@@ -3,7 +3,7 @@ name = "interview-assistant"
 version = "1.0.0"
 description = "面试官助手PRO — 简历解析 / AI 出题 / 面试评分 / PDF 报告（Rust / Tauri 重写）"
 authors = ["interview-assistant"]
-license = "MIT"
+license-file = "../LICENSE"
 edition = "2021"
 
 [lib]

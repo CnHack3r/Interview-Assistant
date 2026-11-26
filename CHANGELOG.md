@@ -1,5 +1,11 @@
 # 更新日志
 
+## 许可变更 - 2026-11-27
+
+- 许可证由 **MIT** 变更为 **[PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)**：源码公开，仅限非商业用途；商业使用需获得作者书面授权
+- `LICENSE` 中写入版权声明与项目地址：`Required Notice: Copyright (c) 2026 CnHack3r (https://github.com/CnHack3r/Interview-Assistant)`
+- `package.json` / `src-tauri/Cargo.toml` 的 license 字段同步更新
+
 ## [1.1.0] - 2026-11-26
 
 ### Added
